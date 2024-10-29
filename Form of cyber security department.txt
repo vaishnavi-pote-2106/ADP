@@ -1,0 +1,102 @@
+<!DOCTYPE html>  	
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms </title>
+    </head>
+    <body bgcolor="pink">
+      <h1 align="center"> CYBER SECURITY DEPARTMENT </h1>
+      <hr color="blue">
+      <br>
+      <form>
+        <b><u>YEAR SELECTION:</b></u> <br> <br>
+       <div class="Form-section active "id="Page 1">
+  <h2>Select Your Year</h2>
+  <p>Please choose your current year in the program:</p>
+  <div class="radio-group">
+    <label><input type="radio" name="Year" value="1st year">1st Year</label><br>
+     <label><input type="radio" name="Year" value="2nd year">2nd year</label><br>
+      <label><input type="radio" name="Year" value="3rd year">3rd Year</label><br>
+       <label><input type="radio" name="Year" value="4th year">4th Year</label><br><br>
+        Year Graduated: <select name="year">
+    <option> -Select-
+        <option> 2014
+    <option> 2024
+    <option> 2025
+    <option> 2026
+    <option> 2027
+    <option> 2028
+    <option> 2029
+    <option> 2030
+    <option> 2031
+    <option> 2032
+    </select>
+   
+  </div>
+  <div class="buttons">
+    <button id="next 1">Next</button>
+  </div>
+</div><br><br>
+       <div class="Form section" id="Page 2">
+  <h2>Student Information</h2>
+  <p>Please provide your personal information below</p>
+  <label for="name">Name:</label>
+  <input type="text" id="name="Name" placeholder="Enter your name"><br><br>
+  <label for="student id">Student ID:</label>
+    <input type="text" id="student id" name="Student Id" placeholder="Enter your student id"><br><br>
+    <div class="buttons">
+    <button id="prev 1">Previous</botton>
+    <button id="next 2">Next</button>
+        </div>
+        </div><br><br>
+        <div class="Form-section" id="Page 3">
+        <h2>Department Activities</h2>
+        <p>Learn about various activities organized by the Cyber security department, including workshop, guest lectures.</p>
+        <ul>
+        <li>Monthly workshop on ethical hacking</li>
+        <li>Annual cyber securty conference</li>
+        <li>Guest lecture by industry expert</li>
+        </ul>
+        <div class="buttons">
+       <button id="prev 3">Previous</botton>
+       <button id="next 3">Next</button>
+       </div>
+        </div>
+         <div class="Form-section" id="Page 4">
+        <h2>Sports Activities</h2>
+        <p>Our department participates in various sports activities, promoting a balanced and beauty lifestyle students</p>
+        <ul>
+          <li>Enter-Departmental tournament</li>
+          <li>Annual cyber sports day</li>
+          <li>Weekly fitness sections</li>
+          </ul>
+          <div class="buttons">
+       <button id="prev 4">Previous</botton>
+       <button id="submit">Submit</button>
+       </div>
+       </div>
+         <script>
+         const sections=document query SelectorAll
+         ('Form-section');
+         const next 1= document.getElementById('next 1');
+         const next 2= document.getElementById('next 2');
+         const next 3= document.getElementById('next 3');
+         const next 4= document.getElementById('next 4');
+         const submit= document.getElementById('submit');
+         Let current page=0;
+         next 1. addEventListner('click',()=> changePage(1));
+          next 2. addEventListner('click',()=> changePage(2));
+           next 3. addEventListner('click',()=> changePage(3));
+            next 4. addEventListner('click',()=> changePage(4));
+            submit. addEventListner('click',()=> alert("Form submitted successfully"));
+            function changePage(PageNumber){
+              section[currentPage].classList.remove('active');
+              currentPage=PageNumber;
+              sections[currentPage].classList.add('active');
+            }
+            </script>
+        </form>
+        </bform>
+        </body>
+        </html>
